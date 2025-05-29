@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 
 // Disable Compression
 @ini_set('zlib.output_compression', 'Off');
