@@ -12,3 +12,10 @@ app.route('/ping')
 app.listen(PORT, () => {
   console.log(`Ping server running at http://localhost:${PORT}`);
 });
+
+const path = require('path');
+
+app.get('/testfile', (req, res) => {
+  const filePath = path.join(__dirname, 'testfile.bin');
+  res.sendFile(filePath);
+});
