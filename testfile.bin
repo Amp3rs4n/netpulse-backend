@@ -1,0 +1,2 @@
+# 5 MB файл з випадковими байтами
+dd if=/dev/urandom of=testfile.bin bs=1M count=5
